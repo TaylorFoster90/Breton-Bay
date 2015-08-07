@@ -1,2 +1,3 @@
-console.log('setup');
-console.log('setup 2');
+ $(window).load(function() {
+    $('.flexslider').flexslider();
+  });

@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "jquery": "~2.1.4",
-    "flexslider": "~2.5.0"
+    "flexslider": "~2.5.0",
+    "Hover": "~2.0.2"
   }
 }

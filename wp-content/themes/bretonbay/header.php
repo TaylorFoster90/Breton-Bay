@@ -7,6 +7,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700|Open+Sans:400,700|Vollkorn:400,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/flexslider/flexslider.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/bower_components/Hover/css/hover.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/main.min.css" rel="stylesheet">
 	<?php wp_head(); ?>
 

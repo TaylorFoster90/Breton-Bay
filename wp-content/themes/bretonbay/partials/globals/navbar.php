@@ -1,7 +1,16 @@
 <div class="navigation">
   <div class="container">
-    <div class="col-xs-6">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="header-logo col-xs-12 col-sm-4 col-md-4">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/breton-bay-logo.png">
     </div>
+    <nav class="primary-navigation col-xs-12 col-sm-8 col-md-8">
+      <ul class="nav-links list-unstyled list-inline">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Golf</a></li>
+        <li><a href="#">Swim &amp; Tennis</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
