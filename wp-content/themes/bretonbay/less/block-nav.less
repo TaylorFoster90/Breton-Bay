@@ -1,15 +1,33 @@
 .section-block-nav{
-  background-color: @grey;
+  background: @dark-blue;
+  background-size: cover;
+  .sub-title{
+    color: #FFF;
+    margin-top: 0;
+    padding-bottom: .75em;
+  }
 }
 .area{
   text-align: center;
   position: relative;
-  border-radius: 10px;
   h3{
     .absolute-center;
-    visibility: hidden;
     font-size: 2.5em;
-    .pt-serif(700);
+    .lora(700);
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    img{
+      max-width: 50%;
+      margin-top: 10px;
+    }
+  }
+  .overlay{
+    height: 300px;
+    width: 300px;
+    border: 3px solid #FFF;
+    opacity: 0;
+    transition: .75s;
   }
   a{
     display: block;
@@ -18,14 +36,9 @@
     height: 300px;
     width: 300px;
     color: #FFF;
-    transition: all .25s;
     &:hover{
-      h3{
-        visibility: visible;
-      }
       .overlay{
-        height: 300px;
-        width: 300px;
+        opacity: 1;
       }
     }
   }
@@ -35,7 +48,7 @@
     background: url('https://c1.staticflickr.com/3/2490/3713699231_959a9fbc54.jpg');
     background-size: cover;
   }
-  .hvr-fade:hover{
+  .overlay{
     background-color: rgba(17, 134, 84, .7);
     border-radius: 10px;
   }
@@ -45,7 +58,7 @@
     background: url('https://upload.wikimedia.org/wikipedia/commons/a/a1/Olympian_Swimming_pool,_Varna.jpg');
     background-size: cover;
   }
-  .hvr-fade:hover{
+  .overlay{
     background-color: rgba(27, 168, 226, .7);
     border-radius: 10px;
   }
@@ -55,7 +68,7 @@
     background: url('https://static.pexels.com/photos/1862/summer-sunshine-alcohol-drink.jpg');
     background-size: cover;
   }
-  .hvr-fade:hover{
+  .overlay{
     background-color: rgba(254, 234, 96, .7);
     border-radius: 10px;
   }

@@ -17,6 +17,7 @@ if (function_exists('acf_add_options_page')) {
 		'menu_slug'  => 'global-content',
 		'capability' => 'edit_posts',
 		'redirect'   => false,
+		'icon_url' 	 => 'dashicons-admin-site',
 	));
 
 	acf_add_options_sub_page(array(
