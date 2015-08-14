@@ -1,0 +1,42 @@
+#footer{
+  background:@cream;
+  border-top: 5px solid @dark-blue;
+  padding: 2em 0;
+  .footer-logo{
+    img{
+      max-width: 120px;
+    }
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+  .footer-navigation{
+    text-align: right;
+    padding-top: 3em;
+    .nav-links{
+      .lora(400);
+      font-size: 13px;
+      a{
+        color: @dark-blue;
+        &:hover{
+          color: @green;
+        }
+      }
+    }
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+  .contact-info{
+    margin-top: 10px;
+    p{
+      margin: 0;
+      .lora(400);
+      color: @dark-blue;
+      font-size: 12px;
+    }
+  }
+  @media(max-width: 767px){
+    text-align: center;
+  }
+}

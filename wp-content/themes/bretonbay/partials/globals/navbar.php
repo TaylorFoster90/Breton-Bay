@@ -1,5 +1,4 @@
 <div class="navigation">
-  <div class="underlay">
     <div class="container">
       <div class="header-logo col-xs-12 col-sm-4 col-md-4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/breton-bay-logo.png">
@@ -14,5 +13,4 @@
         </ul>
       </nav>
     </div>
-  </div>
 </div>
