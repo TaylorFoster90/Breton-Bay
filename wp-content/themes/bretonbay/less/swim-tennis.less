@@ -1,0 +1,185 @@
+.page-template-template-swim-and-tennis{
+  .banner{
+    h2{
+      color: @light-blue;
+    }
+  }
+  .section-swim-tennis-intro{
+    padding-top: 0;
+    color: #FFF;
+    h3{
+      text-align: center;
+      .lora(700);
+      padding: .5em 0;
+      font-size: 2.5em;
+    }
+    .swim-features, .tennis-features{
+    }
+    .swim-feature, .tennis-feature {
+      text-align: center;
+      font-weight: 400;
+      padding-bottom: .5em;
+      font-size: 17px;
+      display: inline-block;
+      width: 49%;
+    }
+    .intro-image{
+      text-align: center;
+      img{
+        margin: 0 auto;
+      }
+    }
+    .col-feature-swimming{
+      padding-top: 4em;
+      padding-bottom: 4em;
+      background-color: @dark-blue;
+    }
+    .col-feature-tennis{
+      padding-top: 4em;
+      padding-bottom: 4em;
+      background-color: @green;
+    }
+    .col-cta{
+      text-align: center;
+      margin-top: 3em;
+    }
+  }
+  .facility{
+    padding-bottom: 2em;
+    .facility-content{
+      font-size: 17px;
+      line-height: 1.7;
+    }
+  }
+  .section-swimming-facility{
+    .swimming-hours{
+      padding-left: 0;
+      h5{
+        color: @dark-blue;
+        font-size: 1.5em;
+      }
+      p{
+        font-weight: 400;
+      }
+    }
+    .sub-title{
+      color: @dark-blue;
+    }
+    .col-cta{
+      background: @dark-blue;
+      padding: 2em 0;
+      color: #FFF;
+      text-align: center;
+      p{
+        .lora(400);
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 1em;
+      }
+      a{
+        &:hover{
+          background-color: #FFF;
+          color: @dark-blue;
+        }
+      }
+    }
+    .facility-slider{
+      background: @grey;
+      padding-top: 3em;
+      padding-bottom: 3em;
+      .flexslider{
+        max-width: 350px;
+        margin: 0 auto;
+        .flex-control-paging{
+          bottom: 2px;
+          z-index: 1000;
+          li{
+            a{
+              background: rgba(10, 85, 147, .7);
+            }
+            .flex-active{
+              background: #fff;
+            }
+          }
+        }
+        .flex-direction-nav{
+          line-height: normal;
+          li{
+            a{
+              &::before{
+                color: @dark-blue;
+                text-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-tennis-facility{
+    padding-bottom: 0;
+    .tennis-hours{
+      padding-left: 0;
+      h5{
+        color: @green;
+        font-size: 1.5em;
+      }
+      p{
+        font-weight: 400;
+      }
+    }
+    .sub-title{
+      color: @green;
+    }
+    .col-cta{
+      background: @green;
+      padding: 2em 0;
+      color: #FFF;
+      text-align: center;
+      p{
+        .lora(400);
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 1em;
+      }
+      a{
+        &:hover{
+          background-color: #FFF;
+          color: @green;
+        }
+      }
+    }
+    .facility-slider{
+      background: @grey;
+      padding-top: 3em;
+      padding-bottom: 3em;
+      .flexslider{
+        max-width: 350px;
+        margin: 0 auto;
+        .flex-control-paging{
+          bottom: 2px;
+          z-index: 1000;
+          li{
+            a{
+              background: rgba(26, 133, 85, .7);
+            }
+            .flex-active{
+              background: #fff;
+            }
+          }
+        }
+        .flex-direction-nav{
+          line-height: normal;
+          li{
+            a{
+              &::before{
+                color: @green;
+                text-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

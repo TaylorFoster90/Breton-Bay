@@ -3,9 +3,9 @@
 /**
  * Menus
  *
- * @author Afteractive
- * @package WordPress
- * @subpackage Afteractive
+ * @author Taylor Foster
+ *
+ *
  */
 
 if (!function_exists('activetheme_register_menus')):
@@ -14,13 +14,9 @@ if (!function_exists('activetheme_register_menus')):
      */
     function activetheme_register_menus() {
         register_nav_menus(array(
-	        'site' => __( 'Site Navigation', 'activetheme'),
-	        'top' => __( 'Top Navigation', 'activetheme'),
 	        'footer' => __( 'Footer Navigation', 'activetheme'),
-	        'copyright' => __( 'Copyright Navigation', 'activetheme'),
             'primary'   => __( 'Primary Navigation', 'activetheme'),
             'mobile' => __( 'Mobile Navigation', 'activetheme'),
-            'event_archive'=> __( 'Archive Navigation', 'activetheme'),
         ));
     }
 

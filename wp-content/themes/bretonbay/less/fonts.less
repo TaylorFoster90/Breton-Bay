@@ -1,12 +1,14 @@
-.dancing{
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;
-}
-.gentium(@weight){
-  font-family: 'Gentium Basic', serif;
+// 300, 400, 700
+.source-sans(@weight){
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: @weight;
 }
+
+// 400, 700
 .lora(@weight){
   font-family: 'Lora', serif;
   font-weight: @weight;
+}
+body{
+  .source-sans(400);
 }

@@ -1,6 +1,7 @@
 .navigation{
   border-bottom: 5px solid @dark-blue;
-  background-color: @cream;
+  background-image: url('http://7-themes.com/data_images/out/63/6987018-plain-wood-background.jpg');
+  background-size: cover;
   padding: 2em 0;
   .header-logo{
     img{
@@ -8,14 +9,17 @@
     }
   }
   .nav-links {
-    .gentium(700);
+    .source-sans(400);
     font-size: 18px;
     text-align: right;
     padding-top: 20px;
     li{
       a{
-        color: @dark-blue;
+        color: #fff;
       }
+    }
+    .hvr-underline-from-left:before{
+      background: @yellow;
     }
   }
 }

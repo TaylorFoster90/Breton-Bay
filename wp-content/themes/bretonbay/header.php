@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Dancing+Script|Gentium+Basic:400,700|Lora:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/flexslider/flexslider.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/Hover/css/hover.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/main.min.css" rel="stylesheet">
@@ -15,3 +15,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <div class="navigation">
+      <div class="container">
+        <div class="header-logo col-xs-12 col-sm-4 col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/breton-bay-logo.png">
+        </div>
+        <nav class="primary-navigation col-xs-12 col-sm-8 col-md-8">
+          <?php wp_nav_menu( array( 'menu_class' => 'nav-links list-unstyled list-inline', 'theme_location' => 'primary' ) ); ?>
+        </nav>
+      </div>
+  </div>

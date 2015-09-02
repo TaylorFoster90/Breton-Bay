@@ -50,5 +50,6 @@ function getCurrentWeather($name) {
 
 // require_once get_template_directory() . '/lib/sidebars.php';
 require_once get_template_directory() . '/lib/acf.php';
+require_once get_template_directory() . '/lib/menus.php';
 
 ?>

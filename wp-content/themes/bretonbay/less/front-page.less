@@ -1,0 +1,161 @@
+.home{
+  .flexslider{
+    border: none;
+    overflow: hidden;
+    .slides{
+      img{
+        width: initial;
+      }
+    }
+  }
+  .home-page-statement{
+    padding: 3em 0;
+  }
+  .section-statement{
+    h1{
+      .lora(700);
+    }
+    .title{
+      font-size: 3.75em;
+      text-align: center;
+    }
+    .home-sub-title{
+      font-size: 2em;
+      text-align: center;
+      font-style: italic;
+    }
+    .source-sans(300);
+    .statement-content{
+      margin-bottom: 1em;
+      p{
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+    .statement-image{
+      img{
+        border-radius: 10px;
+      }
+    }
+    .statement-outro{
+      overflow: hidden;
+      .lora(700);
+      color: @dark-blue;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+  .section-course-info{
+    background: @green;
+    color: #FFF;
+    .sub-title{
+      padding-bottom: 0;
+    }
+    .date{
+      text-align: center;
+      .lora(400);
+    }
+    .tee-time-info{
+      margin-top: 12px;
+      .source-sans(400);
+      font-size: 20px;
+      .closed-explination{
+        margin-left: 2%;
+      }
+      .status-closed{
+        color: @red;
+        border-bottom: 1px solid @red;
+      }
+      .number{
+        margin-left: 2%;
+        i{
+          color: @yellow;
+        }
+        a{
+          color: #FFF;
+          &:hover{
+            color: @yellow;
+          }
+        }
+      }
+    }
+    .col-page-link{
+      text-align: center;
+      padding-top: 3em;
+    }
+  }
+  .section-block-nav{
+    background: @dark-blue;
+    background-size: cover;
+    .sub-title{
+      color: #FFF;
+      margin-top: 0;
+    }
+  }
+  .area{
+    text-align: center;
+    position: relative;
+    h3{
+      .absolute-center;
+      font-size: 2.5em;
+      .lora(700);
+      text-transform: uppercase;
+      text-align: center;
+      width: auto;
+      img{
+        max-width: 50%;
+        margin-top: 10px;
+      }
+    }
+    .overlay{
+      height: 300px;
+      width: 300px;
+      border: 3px solid #FFF;
+      opacity: 0;
+      transition: .75s;
+    }
+    a{
+      display: block;
+      border-radius: 10px;
+      margin: 0 auto;
+      height: 300px;
+      width: 300px;
+      color: #FFF;
+      &:hover{
+        .overlay{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .area-golf{
+    a{
+      background: url('https://c1.staticflickr.com/3/2490/3713699231_959a9fbc54.jpg');
+      background-size: cover;
+    }
+    .overlay{
+      background-color: rgba(17, 134, 84, .7);
+      border-radius: 10px;
+    }
+  }
+  .area-swim{
+    a{
+      background: url('https://upload.wikimedia.org/wikipedia/commons/a/a1/Olympian_Swimming_pool,_Varna.jpg');
+      background-size: cover;
+    }
+    .overlay{
+      background-color: rgba(27, 168, 226, .7);
+      border-radius: 10px;
+    }
+  }
+  .area-grill{
+    a{
+      background: url('https://static.pexels.com/photos/1862/summer-sunshine-alcohol-drink.jpg');
+      background-size: cover;
+    }
+    .overlay{
+      background-color: rgba(254, 234, 96, .7);
+      border-radius: 10px;
+    }
+  }
+}

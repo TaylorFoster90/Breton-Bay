@@ -29,9 +29,10 @@ a{
 		transform: translate(-50%,-50%);
 }
 .sub-title{
-  .lora(400);
+  .lora(700);
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
+  padding-bottom: 1em;
 }
 
 /**************************************
@@ -39,5 +40,46 @@ a{
 **************************************/
 
 .btn{
-  .lora(400);
+  .source-sans(700);
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  transition: all .5s;
+  border-radius: 0;
+}
+.btn-green{
+  background-color: @green;
+  color: #fff;
+  &:hover{
+    background-color: darken(@green, 5%);
+    color: #fff;
+  }
+}
+.btn-ghost{
+  color: inherit;
+  &:hover{
+    color: inherit;
+  }
+}
+
+
+/**************************************
+  Banners
+**************************************/
+
+.page-banner{
+  height: 100px;
+  h2{
+    .lora(700);
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 3em;
+    padding-top: 20px;
+    text-shadow: 1px 1px 3px @yellow;
+  }
+  .underlay{
+    height: inherit;
+    background-color: rgba(0,0,0,.7);
+  }
 }

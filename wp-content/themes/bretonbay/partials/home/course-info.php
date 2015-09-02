@@ -29,7 +29,7 @@
         <p><?php echo getCurrentWeather('leonardtown'); ?> </p>
       </div>
       <div class="col-page-link col-xs-12 col-sm-12 col-md-12">
-        <a href="#" class="btn btn-lg hvr-glow">Learn More About The Course</a>
+        <a href="#" class="btn btn-green btn-lg">Learn More About The Course</a>
       </div>
     </div>
   </div>
