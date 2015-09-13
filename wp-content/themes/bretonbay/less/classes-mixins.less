@@ -31,7 +31,7 @@ a{
 .sub-title{
   .lora(700);
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.75em;
   padding-bottom: 1em;
 }
 
@@ -45,6 +45,22 @@ a{
   border: 2px solid #fff;
   transition: all .5s;
   border-radius: 0;
+}
+.btn-light-blue{
+  background-color: @light-blue;
+  color: #fff;
+    &:hover{
+      background-color: darken(@light-blue, 5%);
+      color: #fff;
+    }
+}
+.btn-dark-blue{
+  background-color: @dark-blue;
+  color: #fff;
+    &:hover{
+      background-color: darken(@dark-blue, 5%);
+      color: #fff;
+    }
 }
 .btn-green{
   background-color: @green;
@@ -67,16 +83,15 @@ a{
 **************************************/
 
 .page-banner{
-  height: 100px;
+  height: 120px;
   h2{
     .lora(700);
     padding: 0;
     text-align: center;
     margin: 0;
     color: #FFF;
-    font-size: 3em;
-    padding-top: 20px;
-    text-shadow: 1px 1px 3px @yellow;
+    font-size: 3.5em;
+    padding-top: 30px;
   }
   .underlay{
     height: inherit;

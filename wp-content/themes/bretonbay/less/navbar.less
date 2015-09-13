@@ -23,3 +23,42 @@
     }
   }
 }
+.affix{
+  top: 0;
+  width: 100%;
+  z-index: 1!important;
+}
+.page-affixed-nav{
+  nav{
+    padding: 1em;
+  }
+  .page-template-template-golf &{
+    background-color: rgba(0, 135, 82, .9);
+    nav{
+      li{
+        a{
+          color: #fff;
+          font-size: 18px;
+          box-shadow: none;
+          padding: 5px 0 5px 30px;
+          transition: all .25s;
+          overflow: hidden;
+          position: relative;
+          display: block;
+          &::before{
+            font-family: 'FontAwesome';
+            content:"\f054";
+            position: absolute;
+            top: 7px;
+            left: -30px;
+            color: #FFF;
+            transition: all .5s ease;
+          }
+        }
+        a:hover::before{
+          left: 6px;
+        }
+      }
+    }
+  }
+}

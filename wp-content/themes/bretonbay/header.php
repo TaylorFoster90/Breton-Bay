@@ -9,6 +9,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/flexslider/flexslider.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/bower_components/Hover/css/hover.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal-default-theme.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/main.min.css" rel="stylesheet">
 	<?php wp_head(); ?>
 

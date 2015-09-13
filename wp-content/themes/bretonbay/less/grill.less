@@ -2,6 +2,9 @@
   .page-banner{
     background-image: url('../img/ironwood-grille-bg.jpg');
     background-size: contain;
+    h2{
+      text-shadow: 1px 1px 3px @yellow;
+    }
   }
   .section-grill-statement{
     .statement-content{
@@ -36,5 +39,48 @@
         }
       }
     }
+  }
+  .section-grill-menu{
+    .sub-title{
+      padding-bottom: 0;
+    }
+    .togo-orders{
+      text-align: center;
+      font-style: italic;
+    }
+    .menu-section-title, .menu-section-description{
+      padding-left: 15px;
+    }
+    .menu-section-title{
+      color: @dark-blue;
+      font-size: 2em;
+      .lora(700);
+    }
+    .menu-section-no-desc{
+      padding-bottom: .75em;
+    }
+    .menu-section-description{
+      padding-top: 0;
+      padding-bottom: 1em;
+      .lora(400);
+      margin-bottom: 0;
+    }
+    .menu-item{
+      height: 150px;
+      h5{
+        .source-sans(700);
+        font-size: 17px;
+      }
+      p{
+        font-style: italic;
+        font-size: 15px;
+      }
+      span{
+
+      }
+    }
+  }
+  .row-menu-area{
+    border-bottom: 1px solid rgb(233,233,233);
   }
 }

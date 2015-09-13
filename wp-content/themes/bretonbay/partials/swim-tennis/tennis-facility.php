@@ -15,7 +15,7 @@
 
       <div class="facility facility-tennis col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-        <div class="facility-content col-xs-12 col-md-7">
+        <div class="facility-content col-xs-12 col-md-6">
           <?php echo $tennis_description; ?>
           <div class="tennis-hours col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h5>Hours</h5>
@@ -23,21 +23,20 @@
           </div>
         </div>
 
-        <div class="facility-slider col-xs-12 col-md-5">
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="http://lorempixel.com/300/301" />
-              </li>
-              <li>
-                <img src="http://lorempixel.com/300/302" />
-              </li>
-              <li>
-                <img src="http://lorempixel.com/300/302" />
-              </li>
-            </ul>
+        <?php if(have_rows('tennis_photos')) : ?>
+          <div class="facility-slider col-xs-12 col-md-6">
+            <div class="flexslider">
+              <ul class="slides">
+                <?php while(have_rows('tennis_photos')) : the_row(); ?>
+                  <?php $photo = get_sub_field('photo'); ?>
+                <li>
+                  <img class="img-responsive" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>">
+                </li>
+                <?php endwhile; ?>
+              </ul>
+          </div>
         </div>
-      </div>
+      <?php endif; ?>
 
     </div>
 

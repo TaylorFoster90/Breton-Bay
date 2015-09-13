@@ -47,7 +47,7 @@ function getCurrentWeather($name) {
 	}
 	return $weather_results;
 }
-
+add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 // require_once get_template_directory() . '/lib/sidebars.php';
 require_once get_template_directory() . '/lib/acf.php';
 require_once get_template_directory() . '/lib/menus.php';

@@ -1,0 +1,65 @@
+.page-template-template-become-member{
+  .page-banner{
+    background-image: url('../img/become-a-member-bg.jpg');
+    background-size: cover;
+    h2{
+      text-shadow: 1px 1px 3px @dark-blue;
+    }
+  }
+  .become-member-steps{
+   .step{
+     margin-top: 4em;
+     text-align: center;
+     &:first-of-type{
+       margin-top: 0;
+     }
+     .step-number{
+       margin-bottom: 1.5em;
+       span{
+         display: block;
+         color: @green;
+         line-height: 1.8;
+         font-size: 30px;
+         font-weight: 700;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         border: 4px solid @green;
+         margin: 0 auto;
+       }
+     }
+     .step-content{
+       p{
+         font-size: 20px;
+       }
+     }
+     .btn{
+       margin-top: 1em;
+     }
+   }
+  }
+  .section-membership-forms{
+    background: rgb(233,233,233);
+    .form{
+      text-align: center;
+      h5{
+        .lora(700);
+        font-size: 1.5em;
+        padding-bottom: 15px;
+      }
+      a{
+        padding-right: 2.5em;
+      }
+      .hvr-icon-float-away{
+        &::before{
+          content: '\f15c';
+          right: 1.5;
+        }
+        &::after{
+          content: '\f15c';
+          right: 1.5;
+        }
+      }
+    }
+  }
+}
