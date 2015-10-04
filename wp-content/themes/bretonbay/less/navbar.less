@@ -1,25 +1,54 @@
 .navigation{
-  border-bottom: 5px solid @dark-blue;
-  background-image: url('http://7-themes.com/data_images/out/63/6987018-plain-wood-background.jpg');
+  background-image: url('../img/wood.jpg');
   background-size: cover;
-  padding: 2em 0;
+  .underlay{
+    padding: 2em 0;
+    background: transparent;
+  }
   .header-logo{
+    a{
+      display: inline-block;
+    }
     img{
       max-width: 130px;
     }
   }
   .nav-links {
     .source-sans(400);
-    font-size: 18px;
     text-align: right;
     padding-top: 20px;
     li{
       a{
         color: #fff;
+        font-size: 19px;
       }
     }
-    .hvr-underline-from-left:before{
+    .hvr-underline-reveal:before{
       background: @yellow;
+    }
+  }
+}
+@media(max-width: 991px){
+  .navigation{
+    .header-logo{
+      text-align: center;
+    }
+    .nav-links{
+      text-align: center;
+      li{
+        a{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 767px){
+  .navigation{
+    .nav-links{
+      li{
+        padding-bottom: 5px;
+      }
     }
   }
 }
@@ -36,6 +65,7 @@
     background-color: rgba(0, 135, 82, .9);
     nav{
       li{
+        margin-left: 10px;
         a{
           color: #fff;
           font-size: 18px;

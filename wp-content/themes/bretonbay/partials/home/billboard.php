@@ -1,14 +1,16 @@
-<section id="billboard">
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="http://lorempixel.com/1272/301" />
-    </li>
-    <li>
-      <img src="http://lorempixel.com/1270/302" />
-    </li>
-    <li>
-      <img src="http://lorempixel.com/1271/302" />
-    </li>
-  </ul>
-</section>
+<?php if(have_rows('home_slider_photos')) : ?>
+  <section id="billboard">
+    <div class="flexslider">
+      <ul class="slides">
+        <?php while(have_rows('home_slider_photos')) : the_row(); ?>
+          <?php
+            $photo = get_sub_field('photo');
+           ?>
+          <li>
+            <img class="img-responsive" src="<?php echo $photo['sizes']['slider']; ?>" />
+          </li>
+      <?php endwhile; ?>
+      </ul>
+    </div>
+  </section>
+<?php endif; ?>

@@ -13,5 +13,7 @@ Template Name: Golf
 <?php get_template_part('partials/globals/page-affix'); ?>
 <?php get_template_part('partials/golf/pro-staff'); ?>
 <?php get_template_part('partials/golf/tournaments-outings'); ?>
+<?php get_template_part('partials/golf/rates'); ?>
+<?php get_template_part('partials/golf/gallery'); ?>
 
 <?php get_footer(); ?>

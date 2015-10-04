@@ -20,6 +20,7 @@
     "flexslider": "~2.5.0",
     "Hover": "~2.0.2",
     "jquery-smooth-scroll": "~1.5.5",
-    "remodal": "~1.0.3"
+    "remodal": "~1.0.3",
+    "magnific-popup": "~1.0.0"
   }
 }

@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <h2 class="sub-title"><?php echo $menu_section_title; ?></h2>
-      <p class="togo-orders">To-Go orders available! Give us a call!</p>
+      <p class="togo-orders">To-Go orders available! Give us a call! (301) 475-7228</p>
     </div>
   </div>
 
