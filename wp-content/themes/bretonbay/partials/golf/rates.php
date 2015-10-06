@@ -58,7 +58,7 @@
       </div>
 
       <div class="golf-rates col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <h4>Friday - Sunday</h4>
+        <h4>Friday - Sunday - Holiday</h4>
           <div class="rates-9 col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <h5>9 Holes</h5>
             <p class="regular">Regular: <?php echo "$".$nine_reg_we; ?></p>
@@ -76,7 +76,7 @@
       </div>
 
 
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="twilight-rates">
           <p><?php echo $twilight_rates; ?></p>
         </div>
@@ -84,7 +84,7 @@
 
         <div class="pro-shop-contact">
           <h4>Contact The Pro Shop</h4>
-          <p class="phone">(240) 475-2300</p>
+          <p class="phone">(301) 475-2300</p>
         </div>
       </div>
 

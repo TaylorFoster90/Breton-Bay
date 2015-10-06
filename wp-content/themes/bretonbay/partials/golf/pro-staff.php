@@ -19,6 +19,7 @@
         $title = get_sub_field('title');
         $photo = get_sub_field('photo');
         $bio = get_sub_field('bio');
+        $logo = get_sub_field('logo');
        ?>
       <div class="pro-staff-member col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <figure>
@@ -27,6 +28,12 @@
         <div class="pro-info">
           <h3><?php echo $name; ?></h3>
           <em><?php echo $title; ?></em>
+          <?php if( in_array('pga', $logo)) : ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/pga-logo.png" />
+          <?php endif; ?>
+          <?php if(in_array('gcsaa', $logo)) : ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/gcsaa-logo.png" />
+          <?php endif; ?>
           <a class="btn btn-lg btn-green hvr-push" data-remodal-target="pro-staff-<?php echo $count; ?>">Learn More</a>
           <div class="remodal" data-remodal-id="pro-staff-<?php echo $count; ?>" data-remodal-options="hashTracking: false">
             <button data-remodal-action="close" class="remodal-close"></button>

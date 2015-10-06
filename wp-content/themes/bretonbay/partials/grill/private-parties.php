@@ -21,7 +21,7 @@
   <div class="container">
     <div class="row">
       <div class="col-cta col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <a class="btn btn-lg btn-ghost" href="../contact/">Contact Us For More Info</a>
+        <a class="btn btn-lg btn-ghost" href="<?php echo get_permalink(39); ?>">Contact Us For More Info</a>
       </div>
     </div>
   </div>

@@ -12,19 +12,11 @@
 <footer id="footer" class="site-footer">
   <div class="container">
     <div class="row">
-      <div class="footer-logo col-xs-12 col-sm-5 col-md-5">
+      <div class="footer-logo col-xs-12 col-sm-4 col-md-4">
         <img src="<?php echo get_template_directory_uri(); ?>/img/breton-bay-logo-white.png" />
       </div>
-      <div class="col-xs-12 col-sm-7 col-md-7">
-        <nav class="footer-navigation">
-          <ul class="nav-links list-unstyled list-inline">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Golf</a></li>
-            <li><a href="#">Swim &amp; Tennis</a></li>
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="footer-nav col-xs-12 col-sm-8 col-md-8">
+        <?php wp_nav_menu( array( 'menu_class' => 'nav-links list-unstyled list-inline', 'theme_location' => 'primary' ) ); ?>
       </div>
     </div>
     <div class="contact-info col-xs-12 col-sm-5 col-md-5">

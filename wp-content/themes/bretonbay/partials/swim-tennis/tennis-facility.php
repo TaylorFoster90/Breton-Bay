@@ -30,7 +30,7 @@
                 <?php while(have_rows('tennis_photos')) : the_row(); ?>
                   <?php $photo = get_sub_field('photo'); ?>
                 <li>
-                  <img class="img-responsive" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>">
+                  <img class="img-responsive" src="<?php echo $photo['sizes']['gallery']; ?>" alt="<?php echo $photo['alt']; ?>">
                 </li>
                 <?php endwhile; ?>
               </ul>
@@ -47,7 +47,7 @@
   <div class="container">
     <div class="row">
       <p>Looking to find out more about becomming a tennis memeber?</p>
-      <a href="#" class="btn btn-lg btn-ghost">Fill Out Our Contact Form</a>
+      <a href="<?php echo get_permalink(39); ?>" class="btn btn-lg btn-ghost">Fill Out Our Contact Form</a>
     </div>
   </div>
 </div>

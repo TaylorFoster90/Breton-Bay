@@ -4,7 +4,7 @@
   $pro_staff_title = get_field('pro_staff_title');
   $golf_gallery_title = get_field('golf_gallery_title');
 ?>
-<div class="affix-wrapper">
+<div class="affix-wrapper hidden-xs">
   <div class="page-affixed-nav">
     <div class="container">
       <div class="row">

@@ -1,5 +1,9 @@
  $(window).load(function() {
-    $('.flexslider').flexslider();
+    $('#main-slider').flexslider();
+    $('#sponsor-slider').flexslider({
+      slideshowSpeed: 4000,
+      directionNav: false
+    });
   });
 $(document).ready(function(){
   $(".primary-navigation a").addClass("hvr-underline-reveal");

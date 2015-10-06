@@ -20,7 +20,7 @@
     li{
       a{
         color: #fff;
-        font-size: 19px;
+        font-size: 18px;
       }
     }
     .hvr-underline-reveal:before{
@@ -87,6 +87,16 @@
         }
         a:hover::before{
           left: 6px;
+        }
+      }
+      @media(max-width: 991px){
+        li{
+          a{
+            padding-left: 15px;
+          }
+          a:hover::before{
+            left: 1px;
+          }
         }
       }
     }
