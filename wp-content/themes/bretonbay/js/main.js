@@ -1,7 +1,7 @@
  $(window).load(function() {
-    $('#main-slider').flexslider();
+    $('#main-slider, .small-slider').flexslider();
     $('#sponsor-slider').flexslider({
-      slideshowSpeed: 4000,
+      slideshowSpeed: 3500,
       directionNav: false
     });
   });
@@ -35,7 +35,12 @@ $(".gform_wrapper input[type=text]").blur(function(){
 });
 $('.popup-gallery').magnificPopup({
   delegate: 'a',
-  type: 'image'
+  type: 'image',
+  gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		}
 });
 $.ajax({
       url: 'https://api.forecast.io/forecast/952d2ececca93bcf0f0b027da994a65e/38.239446,-76.618166',

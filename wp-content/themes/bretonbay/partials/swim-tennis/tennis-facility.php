@@ -25,7 +25,7 @@
 
         <?php if(have_rows('tennis_photos')) : ?>
           <div class="facility-slider col-xs-12 col-md-6">
-            <div class="flexslider">
+            <div class="flexslider small-slider">
               <ul class="slides">
                 <?php while(have_rows('tennis_photos')) : the_row(); ?>
                   <?php $photo = get_sub_field('photo'); ?>

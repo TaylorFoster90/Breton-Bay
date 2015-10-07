@@ -25,6 +25,9 @@
             <li class="blue"><i class="fa fa-caret-up"></i> <?php echo $blue_tees; ?> yds.</li>
             <li class="white"><i class="fa fa-caret-up"></i> <?php echo $white_tees; ?> yds.</li>
             <li class="red"><i class="fa fa-caret-up"></i> <?php echo $red_tees; ?> yds.</li>
+            <?php if($black_tees) : ?>
+              <li class="black"><i class="fa fa-caret-up"></i> <?php echo $black_tees; ?> yds.</li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>

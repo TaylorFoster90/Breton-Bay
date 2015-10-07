@@ -37,9 +37,12 @@
           <a class="btn btn-lg btn-green hvr-push" data-remodal-target="pro-staff-<?php echo $count; ?>">Learn More</a>
           <div class="remodal" data-remodal-id="pro-staff-<?php echo $count; ?>" data-remodal-options="hashTracking: false">
             <button data-remodal-action="close" class="remodal-close"></button>
-            <h1><?php echo $name; ?></h1>
+            <h3><?php echo $name; ?></h3>
             <?php echo $bio; ?>
-            <button data-remodal-action="cancel" class="btn btn-lg btn-green">Close</button>
+            <div class="btn-row">
+              <a href="<?php echo get_permalink(39); ?>" class="btn btn-lg btn-dark-blue">Get In Touch</a>
+              <button data-remodal-action="cancel" class="btn btn-lg btn-green">Close</button>
+            </div>
           </div>
         </div>
       </div>
