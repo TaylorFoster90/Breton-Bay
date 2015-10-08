@@ -30,9 +30,13 @@
             <?php endif; ?>
           </ul>
         </div>
+        <div class="somd-am">
+          <h5>Home of the Southern Maryland Amateur Golf Tournament</h5>
+          <a href="http://www.somdamgolf.com/" target="_blank" class="hvr-float-shadow"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/somd-am-logo.png"></a>
+        </div>
+        </div>
       </div>
     </div>
-  </div>
 
   <div class="container">
     <div class="row">
